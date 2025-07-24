@@ -16,12 +16,9 @@ export default function PostDetail() {
   return (
     <div className="bg-[#FBFBF3] min-h-screen py-6 flex justify-center">
       <div className="flex w-[1076px] gap-6">
-        {/* 왼쪽 본문 */}
         <div className="flex-1">
-          {/* 제목 */}
           <h1 className="text-[24px] font-Pretendard font-bold mb-6">커뮤니티</h1>
 
-        {/* 게시글 */}
         <div className="bg-white rounded-[12px] p-8 mb-6">
         <div className="flex items-center gap-2 mb-6">
             <div className="w-6 h-6 rounded-full bg-gray-300" />
@@ -39,7 +36,6 @@ export default function PostDetail() {
         <p className="text-sm font-Pretendard text-[#5E5E5E]">댓글 {comments.length}</p>
         </div>
 
-          {/* 댓글 입력 */}
           <form
             onSubmit={handleSubmit}
             className="flex items-center bg-[#E6EAF0] rounded-[8px] overflow-hidden mb-3"
@@ -59,7 +55,6 @@ export default function PostDetail() {
             </button>
           </form>
 
-          {/* 댓글 리스트 */}
           {comments.map((c, i) => (
             <div key={i} className="bg-white rounded-[12px] p-4 mb-3">
               <div className="flex items-center gap-2 mb-2">
@@ -71,7 +66,6 @@ export default function PostDetail() {
           ))}
         </div>
 
-        {/* 사이드 영역 */}
         <div className=" w-[260px] h-fit rounded-[12px] bg-white p-4 mt-[55px]">
           <h3 className="com-edu-go">관련 학습 바로가기</h3>
           <div className="flex flex-col gap-2">
