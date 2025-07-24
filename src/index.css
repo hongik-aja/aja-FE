@@ -92,3 +92,28 @@ line-height: 120%; /* 19.2px */
 .font-pretendard {
   font-family: 'Pretendard', sans-serif;
 }
+
+
+.coupon{
+  display: flex;
+padding: 0 14px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+align-self: stretch;
+margin-top: 24px;
+margin-left: 24px;
+}
+
+.coupon-design {
+  background-color: #A57B57;
+  border-radius: 0.75rem; /* rounded-xl */
+  height: 48px;
+  width: 100%; /* full 대신 */
+  color: #FFF; /* font-color → color로 수정 */
+  font-family: 'Pretendard', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
+}
