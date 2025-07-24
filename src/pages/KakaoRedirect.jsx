@@ -20,8 +20,8 @@ export const KakaoRedirect = () => {
 
     const kakaoLogin = async () => {
       try {
-        // const { accessToken, refreshToken } = await login(code);
-        // setTokens(accessToken, refreshToken);
+        const { accessToken, refreshToken } = await login(code);
+        setTokens(accessToken, refreshToken);
         navigate('/');
       } catch (err) {
         alert('로그인 실패');
