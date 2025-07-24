@@ -1,10 +1,13 @@
+//메인 페이지에서 카테고리 8개 나오는 부분
 import { Outlet } from 'react-router-dom';
-
+import Navbar from '../Navbar';
 export const Layout = () => {
   return (
-    <div className="flex min-h-screen flex-col">
-      <main className="flex-1 flex flex-col items-center justify-center">
+    <div>
+      <Navbar />
+      <main>
         <Outlet />
+        
       </main>
     </div>
   );

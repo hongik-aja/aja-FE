@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 
-@theme {
-  --color-main: #4f46e5;
+body {
+  margin: 0;
+  padding: 0;
 }
