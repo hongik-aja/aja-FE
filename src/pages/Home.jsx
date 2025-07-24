@@ -12,9 +12,14 @@ export function Home() {
           <a href="#" className="text-sm text-black-600 hover:underline">더보기</a>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
-          <p className="text-sm text-gray-500">커뮤니티</p>
-          <p className="text-sm text-gray-500">혜택 쿠폰</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-6">          <p className="main-com-font">커뮤니티</p>
+          <a href="#" className="text-sm text-black-600 hover:underline">더보기</a>
+
+          
+          
+          <p className="main-com-font">혜택 쿠폰</p>
+          <a href="#" className="text-sm text-black-600 hover:underline">더보기</a>
+
         </div>
       </div>
     </div>
