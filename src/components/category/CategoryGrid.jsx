@@ -16,12 +16,12 @@ const categories = [
 
 export default function CategoryGrid({ onSelect }) {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center mx-auto max-w-screen-xl">
       <div className='w-full flex justify-between py-8'>
         <span className='text-header'>교육</span>
         <MoreButton onClick={() => console.log('더보기 클릭')} />
       </div>
-      <div className="w-full grid lg: grid-cols-4 gap-10">
+      <div className="w-full grid lg:grid-cols-4 gap-10">
         {categories.map((cat) => (
           <CategoryCard
             key={cat.name}
