@@ -37,7 +37,7 @@ const contentData = {
     ],
      phrases: [
       { title: '들어가기',      
-        description: `이모님(사장님) 안녕하세요. 
+        description: `이모님(사장님) 안녕하세요.
         [Imo(sajangnim) annyeonghasaeyo]` },
       { title: '주문하기',       
         description: `주문할게요
