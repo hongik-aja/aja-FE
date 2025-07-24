@@ -29,7 +29,7 @@ font-family: Pretendard;
 font-size: 28px;
 font-style: normal;
 font-weight: 700;
-line-height: 120%; /* 33.6px */
+line-height: 120%;
 }
 
 .com-title{
@@ -67,7 +67,7 @@ font-family: Pretendard;
 font-size: 18px;
 font-style: normal;
 font-weight: 700;
-line-height: 120%; /* 21.6px */
+line-height: 120%; 
 padding-bottom: 16px;
 }
 
@@ -86,7 +86,7 @@ font-family: Pretendard;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 120%; /* 19.2px */
+line-height: 120%; 
 }
 
 .font-pretendard {
@@ -107,13 +107,13 @@ margin-left: 24px;
 
 .coupon-design {
   background-color: #A57B57;
-  border-radius: 0.75rem; /* rounded-xl */
+  border-radius: 0.75rem; 
   height: 48px;
-  width: 100%; /* full 대신 */
-  color: #FFF; /* font-color → color로 수정 */
+  width: 100%; 
+  color: #FFF; 
   font-family: 'Pretendard', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 19.2px */
+  line-height: 120%;
 }
