@@ -1,6 +1,24 @@
 @import 'tailwindcss';
 
+@theme {
+  --color-main: #FBFBF3;
+  --color-sub: #534B45;
+  --color-sub2: #9B7859;
+
+}
+
 body {
   margin: 0;
   padding: 0;
+}
+
+@layer utilities {
+  .text-base {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .text-header {
+    font-size: 28px;
+    font-weight: 700;
+  }
 }

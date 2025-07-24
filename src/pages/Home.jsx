@@ -1,22 +1,31 @@
-export function Home() {
+import { useNavigate } from 'react-router-dom';
+import { useAuthStore } from '../stores/useAuthStore';
+import CategoryGrid from '../components/category/CategoryGrid';
+import { Profile } from '../components/profile/Profile';
+import profileImage from '../assets/profile.jpeg';
+
+export const Home = () => {
+  const navigate = useNavigate();
+  const isLoggedIn = useAuthStore((state) => state.isLoggedIn);
+
   return (
-    <div className="w-full min-h-screen">
-      <div className="p-6">
-        <div className="mb-6">
-          <h2 className="text-xl font-semibold">Hi!</h2>
-          <p className="text-sm text-gray-500">내용 추가해야됨!!!!!</p>
-        </div>
+    <div className="flex flex-col w-full min-h-screen">
+      <div className="pt-8">
+        {/* 로그인한 경우만 사용자 프로필 렌더링 */}
+        {true && (
+          <Profile
+            name="이승찬"
+            imageUrl={profileImage}
+          />
+        )}
 
-        <div className="flex justify-between mb-4">
-          <h3 className="text-lg font-medium">교육 카테고리 선택</h3>
-          <a href="#" className="text-sm text-black-600 hover:underline">더보기</a>
-        </div>
+        <CategoryGrid onSelect={(cat) => navigate(`/category/${encodeURIComponent(cat)}`)} />
 
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
-          <p className="text-sm text-gray-500">커뮤니티</p>
-          <p className="text-sm text-gray-500">혜택 쿠폰</p>
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-8 mt-20">
+          <p className="text-header ">커뮤니티</p>
+          <p className="text-header ">혜택 쿠폰</p>
         </div>
       </div>
     </div>
   );
-}
+};
