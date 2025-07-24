@@ -24,11 +24,11 @@ export const Home = () => {
 
         <CategoryGrid onSelect={(cat) => navigate(`/category/${encodeURIComponent(cat)}`)} />
 
-        <div className="bg-[#FBFBF3] min-h-screen pt-20 px-6">
+        <div className="bg-[#FBFBF3] min-h-screen pt-20">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex flex-col gap-4">
           <div className="flex justify-between items-center">
-            <h2 className="text-xl font-bold">커뮤니티</h2>
+            <h2 className="text-header font-bold">커뮤니티</h2>
               <MoreButton onClick={() => console.log('혜택 더보기 클릭')} />
           </div>
 
@@ -44,7 +44,7 @@ export const Home = () => {
 
 <div className="flex flex-col gap-4">
   <div className="flex justify-between items-center">
-    <h2 className="text-xl font-bold">혜택 보기</h2>
+    <h2 className="text-header font-bold">혜택 보기</h2>
     <MoreButton onClick={() => console.log('혜택 더보기 클릭')} />
   </div>
 
@@ -65,7 +65,7 @@ export const Home = () => {
       </p>
     </div>
       </div>
-</div>
+    </div>
 
           </div>
         </div>
