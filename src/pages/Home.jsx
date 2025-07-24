@@ -5,6 +5,7 @@ import CategoryGrid from '../components/category/CategoryGrid';
 import { Profile } from '../components/profile/Profile';
 import profileImage from '../assets/profile.jpeg';
 import coupon from '../assets/coupon.png';
+import { MoreButton } from '../components/common/MoreButton';
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -28,9 +29,7 @@ export const Home = () => {
         <div className="flex flex-col gap-4">
           <div className="flex justify-between items-center">
             <h2 className="text-xl font-bold">커뮤니티</h2>
-            <a href="#" className="text-sm text-gray-600 hover:underline flex items-center gap-1">
-              더보기 <span className="text-xs">›</span>
-            </a>
+              <MoreButton onClick={() => console.log('혜택 더보기 클릭')} />
           </div>
 
           <div className="bg-white shadow-sm rounded-lg divide-y divide-gray-200">
@@ -46,9 +45,7 @@ export const Home = () => {
 <div className="flex flex-col gap-4">
   <div className="flex justify-between items-center">
     <h2 className="text-xl font-bold">혜택 보기</h2>
-    <a href="#" className="text-sm text-gray-600 hover:underline flex items-center gap-1">
-      더보기 <span className="text-xs">›</span>
-    </a>
+    <MoreButton onClick={() => console.log('혜택 더보기 클릭')} />
   </div>
 
   <div className="flex flex-col gap-6">
