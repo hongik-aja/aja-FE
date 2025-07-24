@@ -4,7 +4,7 @@ export function EducationList({ items }) {
       {items.map((item, idx) => (
         <li key={idx} className="border-b pb-10">
           <h3 className="text-lg font-semibold pb-8">{item.title}</h3>
-          <p className="text-gray-700">{item.description}</p>
+          <p className="text-gray-700 whitespace-pre-line ">{item.description}</p>
         </li>
       ))}
     </ul>

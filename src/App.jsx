@@ -5,7 +5,6 @@ import { Login } from './pages/Login';
 import { KakaoRedirect } from './pages/KakaoRedirect'
 import {CategoryDetail} from './pages/CategoryDetail';
 import Community from './pages/Community';
-import Navbar from './components/Navbar';
 import PostDetail from './pages/PostDetail';
 
 const App = () => {
