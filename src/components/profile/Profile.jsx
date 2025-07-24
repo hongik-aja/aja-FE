@@ -1,6 +1,6 @@
 export function Profile({ name, imageUrl }) {
   return (
-    <div className="flex items-center gap-8">
+    <div className="flex items-center gap-8 mx-auto max-w-screen-xl">
       <img
         src={imageUrl}
         alt={`${name}의 프로필 사진`}
